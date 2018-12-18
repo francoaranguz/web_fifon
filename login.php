@@ -1,5 +1,5 @@
 <?php
-
+error_reporting(0);
 session_start();
 if (isset($_SESSION['user_id'])) {
   header('Location: /web_fifon/admin/index.php');
@@ -29,7 +29,7 @@ if(!empty($usuario) && !empty($pass)) {
 		$_SESSION['user_id'] = $valida_id;
 		header("Location: /web_fifon/admin/index.php");
 	  } else {
-		$message = 'Lo sentimos, esas credenciales no coinciden';
+		//$message = 'Lo sentimos, esas credenciales no coinciden';
 	  }
 ?>
 
