@@ -2,7 +2,7 @@
 
 $server = 'localhost';
 $username = 'root';
-$password = '';
+$password = 'Avarti2018';
 $database = 'fifon_pepsico';
 
 try {

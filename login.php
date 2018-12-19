@@ -13,7 +13,7 @@ $pass = $_POST['pass'];
 
 
 if(!empty($usuario) && !empty($pass)) {
-	$query = "SELECT idUser, user_name, pass FROM usuarios WHERE user_name = '$usuario' and pass = '$pass' LIMIT 1";
+	$query = "SELECT idUser, user_name, pass FROM Usuarios WHERE user_name = '$usuario' and pass = '$pass' LIMIT 1";
 	$results = mysqli_query($conn, $query);
 	$message = '';
 
